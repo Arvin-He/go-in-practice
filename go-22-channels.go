@@ -14,7 +14,6 @@ func main() {
 	// 使用 <-channel 语法从通道中 接收(receives) 一个值。
 	// 这里 将接收我们在上面发送的 "ping" 消息并打印出来。
 	msg := <-messages
-
 	fmt.Println(msg)
 }
 
